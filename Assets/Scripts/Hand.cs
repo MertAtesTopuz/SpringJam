@@ -25,7 +25,7 @@ public class Hand : MonoBehaviour
             }
         }
 
-        print(other);
+       // print(other);
     }
 
     private void OnTriggerStay(Collider other)

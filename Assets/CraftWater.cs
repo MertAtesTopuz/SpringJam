@@ -7,6 +7,7 @@ public class CraftWater : MonoBehaviour
 {
 
     public GameObject item;
+    public PartDebugger partDebugger;
 
     private bool burn;
 
@@ -20,6 +21,22 @@ public class CraftWater : MonoBehaviour
         if(other.gameObject.CompareTag("Item") && burn == true)
         {
             item = other.gameObject;
+                if (item.GetComponent<ItemScript>().mainHeadPart != null && item.GetComponent<ItemScript>().mainHandPart == null && item.GetComponent<ItemScript>().mainBodyPart == null )
+                {
+                    partDebugger.mainHead = item.GetComponent<ItemScript>().mainHeadPart;
+                }
+                else if (item.GetComponent<ItemScript>().mainHandPart != null && item.GetComponent<ItemScript>().mainBodyPart == null && item.GetComponent<ItemScript>().mainHeadPart == null)
+                {
+                    partDebugger.mainHand = item.GetComponent<ItemScript>().mainHandPart;
+                }
+                else if (item.GetComponent<ItemScript>().mainBodyPart != null && item.GetComponent<ItemScript>().mainHeadPart == null && item.GetComponent<ItemScript>().mainHandPart == null)
+                {
+                    partDebugger.mainBody = item.GetComponent<ItemScript>().mainBodyPart;
+                }
+                else
+                {
+                    return;
+                }
             Destroy(other.gameObject);
         }
     }

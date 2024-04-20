@@ -57,14 +57,14 @@ public class PlayerMovement : MonoBehaviour
         isCarrying = FindAnyObjectByType<Hand>().carryingSmthng;
 
         Animation();
-        Debug.Log(dir.y);
+        //Debug.Log(dir.y);
 
         cam.transform.position = new Vector3(transform.position.x - mesafeX, cam.transform.position.y ,cam.transform.position.y - mesafeY);
     }
 
     private Vector2 MovePlayer()
     {
-        Debug.Log(moveAction.ReadValue<Vector2>());
+        //Debug.Log(moveAction.ReadValue<Vector2>());
 
         Vector2 direction = moveAction.ReadValue<Vector2>();
 

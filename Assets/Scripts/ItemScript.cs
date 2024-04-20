@@ -5,6 +5,9 @@ using UnityEngine;
 public class ItemScript : MonoBehaviour
 {
     public GameObject hand;
+    public HeadPart mainHeadPart;
+    public BodyPart mainBodyPart;
+    public HandPart mainHandPart;
 
     public bool isCarrying;
 
