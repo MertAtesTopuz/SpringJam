@@ -11,6 +11,7 @@ public class Hand : MonoBehaviour
     private ItemScript script;
 
     public bool carryingSmthng = false, canBurn = false;
+    private bool waitCD = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -36,18 +37,52 @@ public class Hand : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.E) && script != null)
             {
-                if(script.isCarrying)
+                if(script.isCarrying && waitCD == false)
                 {
                     DropItem();
+                    waitCD = true;
+                    StartCoroutine(Wait());
                 }
-                else if (!carryingSmthng)
+                else if (!carryingSmthng && waitCD == false)
                 {
                     PickUpItem(other.gameObject);
-                }
-                
+                    waitCD = true;
+                    StartCoroutine(Wait());
+                } 
             }
+        }
+    }
 
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1);
+        waitCD = false;
+    }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && waitCD == false)
+        { 
+            if (item != null)
+            {
+                DropItem();
+                waitCD = true;
+                StartCoroutine(Wait());
+            }
+            else
+            {
+                Collider[] colliders = Physics.OverlapSphere(transform.position, 1f);
+                foreach (Collider col in colliders)
+                {
+                    if (col.CompareTag("Item"))
+                    {
+                        PickUpItem(col.gameObject);
+                        waitCD = true;
+                        StartCoroutine(Wait());
+                        break;
+                    }
+                }
+            }
         }
     }
 
