@@ -8,6 +8,22 @@ public class AttackMaker : MonoBehaviour
     public GameObject attackArea;
     public float attackCooldown = 2;
     public bool canAttack = true;
+    public bool tentacleRange;
+    public bool clawDamage;
+    public  int attackPower = 2;
+
+    void Start()
+    {
+        if(clawDamage == true)
+        {
+            attackPower *= 2;
+        }
+
+        if(tentacleRange == true)
+        {
+            transform.localScale = new Vector3(2, 1, 1);
+        }
+    }
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Mouse0))

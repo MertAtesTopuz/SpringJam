@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class AttackArea : MonoBehaviour
 {
-
-    public int attackPower = 4;
+    public AttackMaker attackMaker;
+    
     void OnTriggerEnter(Collider other)
     {
         if(other.tag  == "Enemy")
         {
-            other.GetComponent<EnemyHealth>().EnemyTakeDamage(attackPower);
+            other.GetComponent<EnemyHealth>().EnemyTakeDamage(attackMaker.attackPower);
         }
     }
 }
