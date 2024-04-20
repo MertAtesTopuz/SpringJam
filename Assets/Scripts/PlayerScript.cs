@@ -18,10 +18,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float rotationSpeed;
     [SerializeField] float mesafeX;
     [SerializeField] float mesafeY;
+
+    private bool isCarrying;
     #endregion#
 
 
     #region Rotation#
+
 
     #endregion#
 
@@ -51,6 +54,11 @@ public class PlayerMovement : MonoBehaviour
         dir = MovePlayer();
         RotatePlayer();
 
+        isCarrying = FindAnyObjectByType<Hand>().carryingSmthng;
+
+        Animation();
+        Debug.Log(dir.y);
+
         cam.transform.position = new Vector3(transform.position.x - mesafeX, cam.transform.position.y ,cam.transform.position.y - mesafeY);
     }
 
@@ -74,7 +82,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void Animation()
     {
-        anim.SetBool("isWalking", dir.y != 0);
+        anim.SetBool("isWalking", Input.GetKey(KeyCode.W));
+        anim.SetBool("isCarry", isCarrying == true);
+        anim.SetBool("isWalknCarry", (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)) && isCarrying == true);
     }
 
 }

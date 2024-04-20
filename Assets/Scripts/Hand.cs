@@ -10,7 +10,7 @@ public class Hand : MonoBehaviour
     private GameObject item;
     private ItemScript script;
 
-    public bool carryingSmthng = false;
+    public bool carryingSmthng = false, canBurn = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -21,6 +21,7 @@ public class Hand : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E) && script != null && !script.isCarrying)
             {
                     script.isCarrying = true;
+                    canBurn = false;
             }
         }
 
@@ -56,9 +57,11 @@ public class Hand : MonoBehaviour
         script = item.GetComponent<ItemScript>();
         script.isCarrying = true;
         carryingSmthng = true;
+        canBurn = false;
         item.transform.SetParent(transform);
         item.transform.localPosition = Vector3.zero;
         item.GetComponent<Rigidbody>().isKinematic = true;
+        item.GetComponent<MeshCollider>().isTrigger = true;
     }
 
     private void DropItem()
@@ -67,7 +70,10 @@ public class Hand : MonoBehaviour
         {
             script.isCarrying = false;
             carryingSmthng = false;
+            canBurn = true;
             item.GetComponent<Rigidbody>().isKinematic = false;
+            item.GetComponent<MeshCollider>().isTrigger = false;
+            item.GetComponent<Rigidbody>().freezeRotation = false;
             item.transform.SetParent(null);
             item = null;
             script = null;
