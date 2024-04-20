@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class AttackMaker : MonoBehaviour
 {
@@ -31,13 +32,23 @@ public class AttackMaker : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
-            StartCoroutine(AttackCooldown());
+            
         }
 
         if(Input.GetMouseButtonDown(1))
         {
-            StartCoroutine(FireAttack());
+            
         }
+    }
+
+    public void BaseAttack(InputAction.CallbackContext context)
+    {
+        StartCoroutine(AttackCooldown());
+    }
+
+    public void Ability(InputAction.CallbackContext context)
+    {
+        StartCoroutine(FireAttack());
     }
 
     public IEnumerator AttackCooldown()
