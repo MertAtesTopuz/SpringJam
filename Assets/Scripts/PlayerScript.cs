@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.AnimatedValues;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -24,12 +26,15 @@ public class PlayerMovement : MonoBehaviour
     #endregion#
 
 
-
+    private Animator anim;
     private Rigidbody rb;
     private CapsuleCollider coll;
 
+    private Vector2 dir;
+
     private void Awake()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         coll = GetComponent<CapsuleCollider>();
     }
@@ -43,19 +48,21 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        MovePlayer();
+        dir = MovePlayer();
         RotatePlayer();
 
         cam.transform.position = new Vector3(transform.position.x - mesafeX, cam.transform.position.y ,cam.transform.position.y - mesafeY);
     }
 
-    private void MovePlayer()
+    private Vector2 MovePlayer()
     {
         Debug.Log(moveAction.ReadValue<Vector2>());
 
         Vector2 direction = moveAction.ReadValue<Vector2>();
 
         transform.Translate(0 , 0, direction.y * Time.deltaTime * movementSpeed);
+
+        return direction;
     }
 
     private void RotatePlayer()
@@ -63,6 +70,11 @@ public class PlayerMovement : MonoBehaviour
         Vector2 rotationInput = moveAction.ReadValue<Vector2>();
         float rotationAmount = rotationInput.x * rotationSpeed * Time.deltaTime;
         transform.Rotate(0f, rotationAmount, 0f);
+    }
+
+    public void Animation()
+    {
+        anim.SetBool("isWalking", dir.y != 0);
     }
 
 }
