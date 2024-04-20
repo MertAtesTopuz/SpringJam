@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 190213213}
   - component: {fileID: 190213214}
-  - component: {fileID: 190213215}
   m_Layer: 0
   m_Name: MenuManager
   m_TagString: Untagged
@@ -171,19 +170,6 @@ MonoBehaviour:
   mainMenuPnl: {fileID: 2134339912}
   settingsPnl: {fileID: 1817404339}
   creditsPnl: {fileID: 609452600}
---- !u!114 &190213215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 190213212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 628517a2d007f463fbbc7f8859b1ade5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  txt: {fileID: 1834697341}
 --- !u!1 &207687125
 GameObject:
   m_ObjectHideFlags: 0
