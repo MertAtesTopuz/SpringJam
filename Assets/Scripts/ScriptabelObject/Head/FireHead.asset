@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: FireHead
   m_EditorClassIdentifier: 
   part: {fileID: 0}
+  partSprite: {fileID: 21300000, guid: 3a6b83dad8c8e421d9ccd6548ffe34d2, type: 3}
   headPart: {fileID: 0}
   firePrefab: {fileID: 0}

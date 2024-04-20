@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Tentacle
   m_EditorClassIdentifier: 
   part: {fileID: 0}
+  partSprite: {fileID: 21300000, guid: 83384b68919bd4e208c63f2e87a7958e, type: 3}
   handPart: {fileID: 0}
   tentaclePrefab: {fileID: 0}
+  lengthMultiplier: 1

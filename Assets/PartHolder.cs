@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PartHolder : MonoBehaviour
 {
@@ -9,6 +10,11 @@ public class PartHolder : MonoBehaviour
     public HandPart hand;
     public HeadPart head;
     public BodyPart body;
+
+    [Header("UI")]
+    public Image handImg;
+    public Image headImg;
+    public Image bodyImg;
 
     [Header("Hands")]
     public GameObject clawPrefab;
@@ -38,6 +44,7 @@ public class PartHolder : MonoBehaviour
         if(handPart != null)
         {
             hand.Activate(gameObject);
+            handImg.sprite = hand.partSprite;
             switch (handPart.GetType().ToString())
             {
                 case "Claw":
@@ -61,6 +68,7 @@ public class PartHolder : MonoBehaviour
         if(headPart != null)
         {
             head.Activate(gameObject);
+            headImg.sprite = head.partSprite;
             switch (headPart.GetType().ToString())
             {
                 case "FireHead":
@@ -83,6 +91,7 @@ public class PartHolder : MonoBehaviour
         if(bodyPart != null)
         {
             body.Activate(gameObject);
+            bodyImg.sprite = body.partSprite;
             switch (bodyPart.GetType().ToString())
             {
                 case "Spike":

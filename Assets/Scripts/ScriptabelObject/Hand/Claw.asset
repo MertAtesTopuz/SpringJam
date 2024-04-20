@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Claw
   m_EditorClassIdentifier: 
   part: {fileID: 0}
+  partSprite: {fileID: 21300000, guid: 1e144276660714b449cf60f34db09ac0, type: 3}
   handPart: {fileID: 0}
   clawPrefab: {fileID: 0}
+  damageMultiplier: 0
