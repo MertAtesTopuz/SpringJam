@@ -34,9 +34,9 @@ public class PartHolder : MonoBehaviour
         HeadCheck(head);
         BodyCheck(body);
 
-        partDebugger.mainBody = body;
-        partDebugger.mainHand = hand;
-        partDebugger.mainHead = head;
+        body = partDebugger.mainBody;
+        hand = partDebugger.mainHand;
+        head = partDebugger.mainHead;
     }
 
    void HandCheck(HandPart handPart)

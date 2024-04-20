@@ -10,6 +10,6 @@ public class Claw : HandPart
 
     public override void Activate(GameObject parent)
     {
-        parent.GetComponent<MonsterController>().damage += damageMultiplier;
+        
     }
 }

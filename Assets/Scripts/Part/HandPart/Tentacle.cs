@@ -10,6 +10,6 @@ public class Tentacle : HandPart
 
     public override void Activate(GameObject parent)
     {
-        parent.GetComponent<MonsterController>().range += lengthMultiplier;
+
     }
 }

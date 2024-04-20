@@ -15,9 +15,12 @@ public class AttackMaker : MonoBehaviour
 
     public ParticleSystem fireParticle;
     public GameObject fireArea;
+    private Animator anim;
 
     void Start()
     {
+        anim = GetComponent<Animator>();
+
         if(clawDamage == true)
         {
             attackPower *= 2;
@@ -26,18 +29,6 @@ public class AttackMaker : MonoBehaviour
         if(tentacleRange == true)
         {
             transform.localScale = new Vector3(2, 1, 1);
-        }
-    }
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            
-        }
-
-        if(Input.GetMouseButtonDown(1))
-        {
-            
         }
     }
 
@@ -55,6 +46,7 @@ public class AttackMaker : MonoBehaviour
     {
         if (canAttack == true)
         {
+            anim.SetTrigger("isAttack");
             canAttack = false;
             attackArea.SetActive(true);
             yield return new WaitForSeconds(attackCooldown); 
