@@ -12,6 +12,9 @@ public class AttackMaker : MonoBehaviour
     public bool clawDamage;
     public  int attackPower = 2;
 
+    public ParticleSystem fireParticle;
+    public GameObject fireArea;
+
     void Start()
     {
         if(clawDamage == true)
@@ -30,6 +33,11 @@ public class AttackMaker : MonoBehaviour
         {
             StartCoroutine(AttackCooldown());
         }
+
+        if(Input.GetMouseButtonDown(1))
+        {
+            StartCoroutine(FireAttack());
+        }
     }
 
     public IEnumerator AttackCooldown()
@@ -42,5 +50,15 @@ public class AttackMaker : MonoBehaviour
             attackArea.SetActive(false);
             canAttack = true;
         } 
+    }
+
+    private IEnumerator FireAttack()
+    {
+        fireParticle.Play();
+        fireArea.SetActive(true);
+        yield return new WaitForSeconds(2);
+        fireParticle.Stop();
+        yield return new WaitForSeconds(1);
+        fireArea.SetActive(false);
     }
 }
