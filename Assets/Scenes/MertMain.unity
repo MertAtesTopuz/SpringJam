@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a91c47ed0f14e49cd8bcfd3f555910f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  partDebugger: {fileID: 11400000, guid: c96adf8c9f73943b5b3ee78298e59ae4, type: 2}
   hand: {fileID: 0}
   head: {fileID: 0}
   body: {fileID: 0}
@@ -183,6 +184,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ce3d70ce35846d292ee4b345aa5c93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
+  range: 0
+  damage: 0
 --- !u!1 &409037784
 GameObject:
   m_ObjectHideFlags: 0

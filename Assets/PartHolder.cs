@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PartHolder : MonoBehaviour
 {
+    public PartDebugger partDebugger;
+
     public HandPart hand;
     public HeadPart head;
     public BodyPart body;
@@ -17,6 +19,10 @@ public class PartHolder : MonoBehaviour
         hand.Activate(gameObject);
         head.Activate(gameObject);
         body.Activate(gameObject);
+
+        partDebugger.mainBody = body;
+        partDebugger.mainHand = hand;
+        partDebugger.mainHead = head;
     }
 
    void HandCheck(HandPart handPart)
