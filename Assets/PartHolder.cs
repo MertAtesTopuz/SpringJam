@@ -10,15 +10,23 @@ public class PartHolder : MonoBehaviour
     public HeadPart head;
     public BodyPart body;
 
+    [Header("Hands")]
+    public GameObject clawPrefab;
+    public GameObject tentaclePrefab;
+
+    [Header("Heads")]
+    public GameObject firePrefab;
+    public GameObject acidPrefab;
+
+    [Header("Bodys")]
+    public GameObject spikePrefab;
+    public GameObject wingPrefab;
+
     void Update()
     {
         HandCheck(hand);
         HeadCheck(head);
         BodyCheck(body);
-
-        hand.Activate(gameObject);
-        head.Activate(gameObject);
-        body.Activate(gameObject);
 
         partDebugger.mainBody = body;
         partDebugger.mainHand = hand;
@@ -29,14 +37,19 @@ public class PartHolder : MonoBehaviour
    {
         if(handPart != null)
         {
+            hand.Activate(gameObject);
             switch (handPart.GetType().ToString())
             {
                 case "Claw":
                     print("Claw");
+                    clawPrefab.SetActive(true);
+                    tentaclePrefab.SetActive(false);
                     break;
 
                 case "Tentacle":
                     print("Tentacle");
+                    tentaclePrefab.SetActive(true);
+                    clawPrefab.SetActive(false);
                     break;
             }
         }
@@ -47,14 +60,19 @@ public class PartHolder : MonoBehaviour
    {
         if(headPart != null)
         {
+            head.Activate(gameObject);
             switch (headPart.GetType().ToString())
             {
                 case "FireHead":
                     print("Fire");
+                    firePrefab.SetActive(true);
+                    acidPrefab.SetActive(false);
                     break;
                 
                 case "AcidHead":
                     print("Acid");
+                    acidPrefab.SetActive(true);
+                    firePrefab.SetActive(false);
                     break;
             }
         }
@@ -64,14 +82,19 @@ public class PartHolder : MonoBehaviour
    {
         if(bodyPart != null)
         {
+            body.Activate(gameObject);
             switch (bodyPart.GetType().ToString())
             {
                 case "Spike":
                     print("Spike");
+                    spikePrefab.SetActive(true);
+                    wingPrefab.SetActive(false);
                     break;
                 
                 case "Wing":
                     print("Wing");
+                    wingPrefab.SetActive(true);
+                    spikePrefab.SetActive(false);
                     break;
             }
         }
