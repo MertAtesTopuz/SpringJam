@@ -7,6 +7,7 @@ public class EnemyHealth : MonoBehaviour
 
     public int enemyHealth;
     public int enemyMaxHealth = 10;
+    public ParticleSystem particle;
 
     public GameObject moloz;
 
@@ -31,10 +32,10 @@ public class EnemyHealth : MonoBehaviour
 
     IEnumerator Bekle()
     {
-
+        particle.Play();
         yield return new WaitForSeconds(2);
         Instantiate(moloz, transform.position, Quaternion.identity);
-
+        particle.Stop();
         Destroy(gameObject);
     }
         
