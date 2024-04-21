@@ -8,7 +8,7 @@ public class AttackArea : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
-        if(other.tag  == "Enemy")
+        if(other.tag  == "Enemy" || other.tag == "Building")
         {
             other.GetComponent<EnemyHealth>().EnemyTakeDamage(attackMaker.attackPower);
         }

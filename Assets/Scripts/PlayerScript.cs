@@ -8,6 +8,9 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
 
+    private AudioSource audio;
+    public AudioClip walkSound;
+
     public GameObject cam;
 
     #region Movement#
@@ -40,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         coll = GetComponent<CapsuleCollider>();
+        audio = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -85,6 +89,11 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("isWalking", Input.GetKey(KeyCode.W));
         anim.SetBool("isCarry", isCarrying == true);
         anim.SetBool("isWalknCarry", (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)) && isCarrying == true);
+    }
+
+    public void WalkSounds()
+    {
+        audio.PlayOneShot(walkSound);
     }
 
 }

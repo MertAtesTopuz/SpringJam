@@ -1,11 +1,14 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+
     public int enemyHealth;
     public int enemyMaxHealth = 10;
+
+    public GameObject moloz;
 
     void Start()
     {
@@ -18,7 +21,21 @@ public class EnemyHealth : MonoBehaviour
 
         if(enemyHealth <= 0)
         {
-            Destroy(gameObject);
+
+            //particle 
+
+            StartCoroutine(Bekle());
+
         }
     }
+
+    IEnumerator Bekle()
+    {
+
+        yield return new WaitForSeconds(2);
+        Instantiate(moloz, transform.position, Quaternion.identity);
+
+        Destroy(gameObject);
+    }
+        
 }

@@ -10,12 +10,13 @@ public class PartHolder : MonoBehaviour
     public HandPart hand;
     public HeadPart head;
     public BodyPart body;
+    /*
 
     [Header("UI")]
     public Image handImg;
     public Image headImg;
     public Image bodyImg;
-
+    */
     [Header("Hands")]
     public GameObject clawPrefab;
     public GameObject tentaclePrefab;
@@ -44,7 +45,7 @@ public class PartHolder : MonoBehaviour
         if(handPart != null)
         {
             hand.Activate(gameObject);
-            handImg.sprite = hand.partSprite;
+            //handImg.sprite = hand.partSprite;
             switch (handPart.GetType().ToString())
             {
                 case "Claw":
@@ -68,7 +69,7 @@ public class PartHolder : MonoBehaviour
         if(headPart != null)
         {
             head.Activate(gameObject);
-            headImg.sprite = head.partSprite;
+            //headImg.sprite = head.partSprite;
             switch (headPart.GetType().ToString())
             {
                 case "FireHead":
@@ -91,7 +92,7 @@ public class PartHolder : MonoBehaviour
         if(bodyPart != null)
         {
             body.Activate(gameObject);
-            bodyImg.sprite = body.partSprite;
+           // bodyImg.sprite = body.partSprite;
             switch (bodyPart.GetType().ToString())
             {
                 case "Spike":
