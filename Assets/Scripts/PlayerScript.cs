@@ -70,7 +70,16 @@ public class PlayerMovement : MonoBehaviour
 
         Vector2 direction = moveAction.ReadValue<Vector2>();
 
-        transform.Translate(0 , 0, direction.y * Time.deltaTime * movementSpeed);
+        if (direction.y != 0 && (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A)))
+        {
+            transform.Translate(0, 0, direction.y * Time.deltaTime * movementSpeed * 1.25f);
+        }
+        else
+        {
+            transform.Translate(0, 0, direction.y * Time.deltaTime * movementSpeed);
+        }
+
+
 
         return direction;
     }

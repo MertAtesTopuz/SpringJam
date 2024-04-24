@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 85385328035e33141bf4e4645f195f27, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: bdc32abcc62991b43a228b5ca0d9bf74, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.06130263, g: 0.06825151, b: 0.093411, a: 1}
+  m_IndirectSpecularColor: {r: 0.025077142, g: 0.044164848, b: 0.081911534, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -153,7 +153,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.16
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -483,7 +483,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &17275605
 PrefabInstance:
@@ -913,7 +914,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1 &33952042
 GameObject:
@@ -2879,7 +2881,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &101095064
 PrefabInstance:
@@ -4029,12 +4032,6 @@ Transform:
 --- !u!4 &133552373 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7261145016651749654, guid: fd9009985dae542edac6ffbe5f476ceb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1643179581}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &133552375 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
     type: 3}
   m_PrefabInstance: {fileID: 1643179581}
   m_PrefabAsset: {fileID: 0}
@@ -5755,7 +5752,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 844924395}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &205754331
 PrefabInstance:
@@ -6116,12 +6114,6 @@ Transform:
 --- !u!4 &214600913 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7261145016651749654, guid: fd9009985dae542edac6ffbe5f476ceb,
-    type: 3}
-  m_PrefabInstance: {fileID: 628468286}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &214600915 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
     type: 3}
   m_PrefabInstance: {fileID: 628468286}
   m_PrefabAsset: {fileID: 0}
@@ -6725,7 +6717,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &232296865
 PrefabInstance:
@@ -7499,7 +7492,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &253332013
 PrefabInstance:
@@ -7650,7 +7644,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &256344067
 PrefabInstance:
@@ -8513,7 +8508,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!4 &274870391 stripped
 Transform:
@@ -11074,7 +11070,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &362858514
 PrefabInstance:
@@ -18058,7 +18055,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &574549678
 PrefabInstance:
@@ -18354,12 +18352,6 @@ Transform:
 --- !u!4 &588452783 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7261145016651749654, guid: fd9009985dae542edac6ffbe5f476ceb,
-    type: 3}
-  m_PrefabInstance: {fileID: 417327184}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &588452785 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
     type: 3}
   m_PrefabInstance: {fileID: 417327184}
   m_PrefabAsset: {fileID: 0}
@@ -18802,12 +18794,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 845690998}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &602695779 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
-    type: 3}
-  m_PrefabInstance: {fileID: 845690998}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &605321832 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: aedc63f3c738c264a908a46a80bfc9d9,
@@ -19088,6 +19074,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1393986626}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4a6b04978c2c05a4f8798b216b571e1f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1393986627}
   m_SourcePrefab: {fileID: 100100000, guid: 4a6b04978c2c05a4f8798b216b571e1f, type: 3}
 --- !u!4 &607475437 stripped
 Transform:
@@ -20490,7 +20480,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &657241360
 PrefabInstance:
@@ -21618,7 +21609,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &711437530
 PrefabInstance:
@@ -22208,7 +22200,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &730122792
 PrefabInstance:
@@ -23925,7 +23918,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &781231333
 PrefabInstance:
@@ -24699,7 +24693,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &805734289
 PrefabInstance:
@@ -25304,12 +25299,6 @@ MonoBehaviour:
 --- !u!4 &827392190 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7261145016651749654, guid: fd9009985dae542edac6ffbe5f476ceb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1681477959}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &827392192 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
     type: 3}
   m_PrefabInstance: {fileID: 1681477959}
   m_PrefabAsset: {fileID: 0}
@@ -25927,12 +25916,6 @@ PrefabInstance:
 --- !u!4 &844924393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7261145016651749654, guid: fd9009985dae542edac6ffbe5f476ceb,
-    type: 3}
-  m_PrefabInstance: {fileID: 396844342}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &844924395 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
     type: 3}
   m_PrefabInstance: {fileID: 396844342}
   m_PrefabAsset: {fileID: 0}
@@ -27719,7 +27702,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!4 &885960650 stripped
 Transform:
@@ -28236,7 +28220,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 1399342806}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &897368133
 PrefabInstance:
@@ -30563,6 +30548,7 @@ GameObject:
   - component: {fileID: 986575559}
   - component: {fileID: 986575558}
   - component: {fileID: 986575557}
+  - component: {fileID: 986575561}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -30652,11 +30638,27 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.42, y: -0.566118, z: -9.8}
-  m_LocalScale: {x: 30.83, y: 30.83, z: 30.83}
+  m_LocalScale: {x: 120.88, y: 120.88, z: 120.88}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &986575561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986575556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42d744b609b9e714694a138d2a05e1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 0
+  enemyMaxHealth: 10
+  particle: {fileID: 0}
+  moloz: {fileID: 0}
 --- !u!1001 &987533326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31168,7 +31170,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1002751139
 PrefabInstance:
@@ -31800,6 +31803,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1011888042}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4a6b04978c2c05a4f8798b216b571e1f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1011888043}
   m_SourcePrefab: {fileID: 100100000, guid: 4a6b04978c2c05a4f8798b216b571e1f, type: 3}
 --- !u!4 &1011888039 stripped
 Transform:
@@ -31829,6 +31836,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 4a6b04978c2c05a4f8798b216b571e1f, type: 3}
+--- !u!114 &1011888043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409509019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42d744b609b9e714694a138d2a05e1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 0
+  enemyMaxHealth: 10
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
+  moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1013223712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33312,7 +33336,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!4 &1056348217 stripped
 Transform:
@@ -33653,17 +33678,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!4 &1070684580 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7261145016651749654, guid: fd9009985dae542edac6ffbe5f476ceb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1419007675}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &1070684582 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
     type: 3}
   m_PrefabInstance: {fileID: 1419007675}
   m_PrefabAsset: {fileID: 0}
@@ -35778,7 +35798,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 827392192}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1140616267
 PrefabInstance:
@@ -36366,7 +36387,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 588452785}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1147532326
 PrefabInstance:
@@ -37058,7 +37080,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!4 &1162982405 stripped
 Transform:
@@ -39621,7 +39644,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 133552375}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1246338270
 PrefabInstance:
@@ -40128,7 +40152,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1262904134
 PrefabInstance:
@@ -41337,7 +41362,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 214600915}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1287371917
 PrefabInstance:
@@ -43883,7 +43909,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1 &1355505794 stripped
 GameObject:
@@ -44022,7 +44049,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1360098167
 PrefabInstance:
@@ -45364,7 +45392,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 1070684582}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!4 &1391985552 stripped
 Transform:
@@ -45412,6 +45441,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 4a6b04978c2c05a4f8798b216b571e1f, type: 3}
+--- !u!114 &1393986627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393986623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42d744b609b9e714694a138d2a05e1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 0
+  enemyMaxHealth: 10
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
+  moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1394486715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45771,12 +45817,6 @@ Transform:
 --- !u!4 &1399342804 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7261145016651749654, guid: fd9009985dae542edac6ffbe5f476ceb,
-    type: 3}
-  m_PrefabInstance: {fileID: 561365058}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &1399342806 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
     type: 3}
   m_PrefabInstance: {fileID: 561365058}
   m_PrefabAsset: {fileID: 0}
@@ -46548,7 +46588,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1418311771
 PrefabInstance:
@@ -49290,7 +49331,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1508330103
 PrefabInstance:
@@ -52212,7 +52254,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: aedc63f3c738c264a908a46a80bfc9d9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.17
+      value: -0.464
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aedc63f3c738c264a908a46a80bfc9d9,
         type: 3}
@@ -52222,7 +52264,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: aedc63f3c738c264a908a46a80bfc9d9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.359
+      value: -1.054
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aedc63f3c738c264a908a46a80bfc9d9,
         type: 3}
@@ -52311,7 +52353,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1591990914
 PrefabInstance:
@@ -52545,7 +52588,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1597692555
 PrefabInstance:
@@ -53022,7 +53066,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1611605329
 PrefabInstance:
@@ -53162,7 +53207,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1 &1613007150 stripped
 GameObject:
@@ -55953,7 +55999,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1698433495
 PrefabInstance:
@@ -58915,7 +58962,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1776444186
 PrefabInstance:
@@ -60033,7 +60081,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1809374026
 PrefabInstance:
@@ -60635,7 +60684,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &1820033565
 PrefabInstance:
@@ -64788,7 +64838,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!4 &1918440175 stripped
 Transform:
@@ -65740,7 +65791,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1 &1961380303
 GameObject:
@@ -68548,7 +68600,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &2061630169
 PrefabInstance:
@@ -69243,7 +69296,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 602695779}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &2075800392
 PrefabInstance:
@@ -70684,13 +70738,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122023319}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.4685231, y: -0, z: -0, w: 0.88345134}
-  m_LocalPosition: {x: -0.063, y: 2.946, z: -0.498}
+  m_LocalRotation: {x: 0.44235325, y: -0, z: 0.00000004470348, w: 0.8968409}
+  m_LocalPosition: {x: -0.063, y: 2.821, z: -1}
   m_LocalScale: {x: 0.14285709, y: 0.14285712, z: 0.14285712}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3392312585719504595}
-  m_LocalEulerAnglesHint: {x: 55.877, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 52.508, y: 0, z: 0}
 --- !u!114 &2122023323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71234,7 +71288,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 10
-  particle: {fileID: 0}
+  particle: {fileID: 2755751001569161199, guid: fd9009985dae542edac6ffbe5f476ceb,
+    type: 3}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
 --- !u!1001 &2142748667
 PrefabInstance:

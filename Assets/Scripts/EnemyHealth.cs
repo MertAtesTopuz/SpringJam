@@ -33,8 +33,12 @@ public class EnemyHealth : MonoBehaviour
     IEnumerator Bekle()
     {
         particle.Play();
+
         yield return new WaitForSeconds(2);
-        Instantiate(moloz, transform.position, Quaternion.identity);
+
+        Vector3 spawnPosition = new Vector3(transform.position.x, 1.45f, transform.position.z);
+
+        Instantiate(moloz, spawnPosition, Quaternion.identity);
         particle.Stop();
         Destroy(gameObject);
     }
