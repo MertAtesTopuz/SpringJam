@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class NextScene : MonoBehaviour
 {
 
-    private bool canPress = false;
+    private bool canPress = false, itemsFull = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -24,9 +24,19 @@ public class NextScene : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            canPress = false;
+        }
+    }
+
     private void Update()
     {
-        if(Input.GetKey(KeyCode.E) && canPress)
+        itemsFull = FindAnyObjectByType<GameManager>().checkIngredients;
+
+        if(Input.GetKey(KeyCode.E) && canPress && itemsFull)
         {
             SceneManager.LoadScene(2);
         }

@@ -55,7 +55,7 @@ public class Hand : MonoBehaviour
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.75f);
         waitCD = false;
     }
 
@@ -96,7 +96,19 @@ public class Hand : MonoBehaviour
         item.transform.SetParent(transform);
         item.transform.localPosition = Vector3.zero;
         item.GetComponent<Rigidbody>().isKinematic = true;
-        item.GetComponent<MeshCollider>().isTrigger = true;
+
+        if(item.GetComponent<BoxCollider>() != null)
+        {
+            item.GetComponent<BoxCollider>().isTrigger = true;
+        }
+        else if(item.GetComponent<MeshCollider>() != null)
+        {
+            item.GetComponent<MeshCollider>().isTrigger = true;
+        }
+        else if (item.GetComponent<CapsuleCollider>() != null)
+        {
+            item.GetComponent<CapsuleCollider>().isTrigger = true;
+        }
     }
 
     private void DropItem()
@@ -107,8 +119,22 @@ public class Hand : MonoBehaviour
             carryingSmthng = false;
             canBurn = true;
             item.GetComponent<Rigidbody>().isKinematic = false;
-            item.GetComponent<MeshCollider>().isTrigger = false;
-            item.GetComponent<Rigidbody>().freezeRotation = false;
+
+            if (item.GetComponent<BoxCollider>() != null)
+            {
+                item.GetComponent<BoxCollider>().enabled = true;
+                item.GetComponent<BoxCollider>().isTrigger = false;
+            }
+            else if (item.GetComponent<MeshCollider>() != null)
+            {
+                item.GetComponent<MeshCollider>().isTrigger = false;
+            }
+            else if (item.GetComponent<CapsuleCollider>() != null)
+            {
+                item.GetComponent<CapsuleCollider>().isTrigger = false;
+            }
+
+            //item.GetComponent<Rigidbody>().freezeRotation = false;
             item.transform.SetParent(null);
             item = null;
             script = null;
