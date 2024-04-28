@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
 
-    private AudioSource audio;
+    private AudioSource playerAudio;
     public AudioClip walkSound;
 
     public GameObject cam;
@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         coll = GetComponent<CapsuleCollider>();
-        audio = GetComponent<AudioSource>();
+        playerAudio = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -100,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void WalkSounds()
     {
-        audio.PlayOneShot(walkSound);
+        playerAudio.PlayOneShot(walkSound);
     }
 
 }

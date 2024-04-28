@@ -6,61 +6,28 @@ using UnityEngine.AI;
 
 public class PlayerAwaerness : MonoBehaviour
 {
-    public NavMeshAgent agent;
-    public Transform player;
+    public bool AwareOfPlayer { get; private set; }
+    public Vector2 DirectionToPlayer { get; private set; }
 
-    public LayerMask  whatIsPlayer;
-    public GameObject projectile;
+    [SerializeField] private float playerAwarenessDistance;
+    private Transform player;
 
-    public Vector3 walkPoint;
-    bool walkPointSet;
-    public float walkPointRange;
-
-    public float sightRange, attackRange;
-    public bool playerInSightRange, playerInAttackRange;
-
-    public float attackCD;
-    bool canAttack;
-
-    void Awake()
+    private void Awake()
     {
-        player = FindObjectOfType<AttackMaker>().transform;
-        agent = GetComponent<NavMeshAgent>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
-
     void Update()
     {
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+        Vector3 enemyToPlayerVector = player.position - transform.position;
+        DirectionToPlayer = enemyToPlayerVector.normalized;
 
-        if(playerInSightRange && playerInAttackRange) Chasing();
-        if(playerInSightRange && playerInAttackRange) Attack();
-    }
-
-    void Chasing()
-    {
-        agent.SetDestination(player.position);
-    }
-
-    void Attack()
-    {
-        agent.SetDestination(transform.position);
-        transform.LookAt(player);
-
-        if(!canAttack)
+        if (enemyToPlayerVector.magnitude <= playerAwarenessDistance)
         {
-
-            Rigidbody rb= Instantiate(projectile, transform.position, quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 8f, ForceMode.Impulse);
-
-            canAttack = false;
-            Invoke(nameof(ResetAttack), attackCD);
+            AwareOfPlayer = true;
         }
-    }
-
-    void ResetAttack()
-    {
-        canAttack = false;
+        else
+        {
+            AwareOfPlayer = false;
+        }
     }
 }
