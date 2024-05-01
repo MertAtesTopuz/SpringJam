@@ -1,20 +1,18 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class AudioCharacter : MonoBehaviour
 {
-
     public AudioClip walkClip;
     private AudioSource source;
 
-    private Rigidbody rb;
     private bool playAgain = true;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
         source = GetComponent<AudioSource>();
     }
 
@@ -23,14 +21,34 @@ public class AudioCharacter : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W) && playAgain == true)
         {
-            Invoke("PlayWalkingSound", 0.57f);
-            playAgain = false;
+            /*Invoke("PlayWalkingSound", 0.57f);
+            playAgain = false;*/
+
+            StartCoroutine(Walk());
+        }
+        else if(Input.GetKey(KeyCode.W) == false)
+        {
+            source.Stop();
         }
     }
 
-    private void PlayWalkingSound()
+    IEnumerator Walk()
     {
+        playAgain = false;
         source.PlayOneShot(walkClip);
+        yield return new WaitForSeconds(0.57f);
         playAgain = true;
+
+    }
+
+
+
+    //Kalsın...
+    private void WalkSound(InputAction.CallbackContext context)
+    {
+        if(context.performed)
+        {
+            source.PlayOneShot(walkClip);
+        }
     }
 }
