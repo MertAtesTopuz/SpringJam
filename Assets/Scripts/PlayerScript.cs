@@ -36,6 +36,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 dir;
 
+    private bool playAgain = true;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -97,10 +99,4 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("isCarry", isCarrying == true);
         anim.SetBool("isWalknCarry", (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)) && isCarrying == true);
     }
-
-    public void WalkSounds()
-    {
-        playerAudio.PlayOneShot(walkSound);
-    }
-
 }

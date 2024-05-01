@@ -19,8 +19,6 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         checkIngredients = checkItems();
-
-        Debug.Log(checkIngredients);
     }
 
     private bool checkItems(bool isFull = false)
