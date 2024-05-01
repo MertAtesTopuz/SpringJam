@@ -96,6 +96,7 @@ public class PlayerMovement : MonoBehaviour
     public void Animation()
     {
         anim.SetBool("isWalking", Input.GetKey(KeyCode.W));
+        anim.SetBool("walkingReversed", Input.GetKey(KeyCode.S) && isCarrying == false);
         anim.SetBool("isCarry", isCarrying == true);
         anim.SetBool("isWalknCarry", (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)) && isCarrying == true);
     }

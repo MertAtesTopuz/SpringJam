@@ -19,7 +19,7 @@ public class AudioCharacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W) && playAgain == true)
+        if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)) && playAgain == true)
         {
             /*Invoke("PlayWalkingSound", 0.57f);
             playAgain = false;*/
