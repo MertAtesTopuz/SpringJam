@@ -38,7 +38,7 @@ public class NextScene : MonoBehaviour
 
         if(Input.GetKey(KeyCode.E) && canPress && itemsFull)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
     }
 }
