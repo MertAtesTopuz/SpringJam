@@ -11,6 +11,7 @@ public class EnemyHealth : MonoBehaviour
 
     public GameObject moloz;
 
+
     void Start()
     {
         enemyHealth = enemyMaxHealth;
@@ -34,9 +35,11 @@ public class EnemyHealth : MonoBehaviour
     {
         particle.Play();
 
+        
+
         yield return new WaitForSeconds(2);
 
-        Vector3 spawnPosition = new Vector3(transform.position.x, 1.45f, transform.position.z);
+        Vector3 spawnPosition = new Vector3(transform.position.x, 3f, transform.position.z);
 
         Instantiate(moloz, spawnPosition, Quaternion.identity);
         particle.Stop();
