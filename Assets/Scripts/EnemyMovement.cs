@@ -14,6 +14,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         playerAwaerness = GetComponent<PlayerAwaerness>();
+        targetObj = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()
