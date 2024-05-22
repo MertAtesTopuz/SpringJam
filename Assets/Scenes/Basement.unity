@@ -9586,8 +9586,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.2019424, y: 1, z: 5.3253384}
-  m_Center: {x: -0.013315201, y: 0, z: -0.010272026}
+  m_Size: {x: 6.080414, y: 1, z: 6.226079}
+  m_Center: {x: -0.026716232, y: 0, z: -0.46064234}
 --- !u!23 &972609857
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12789,7 +12789,7 @@ GameObject:
   - component: {fileID: 1282517220}
   - component: {fileID: 1282517219}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BackButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
