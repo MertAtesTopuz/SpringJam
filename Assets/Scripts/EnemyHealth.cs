@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+ //arda was here
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class EnemyHealth : MonoBehaviour
     {
         particle.Play();
 
-        
+        InvokeRepeating("Shake", 0.1f, 0.5f);
 
         yield return new WaitForSeconds(2);
 
@@ -44,6 +45,33 @@ public class EnemyHealth : MonoBehaviour
         Instantiate(moloz, spawnPosition, Quaternion.identity);
         particle.Stop();
         Destroy(gameObject);
+    }
+
+    private Vector3 Shake()
+    {
+        
+        Debug.Log("Invoked.");
+
+        int isMinus, whichVector, xVal = 0, yVal = 0;
+
+        isMinus = Random.Range(0,2) == 0 ? -1 : 1;
+        whichVector = Random.Range(0, 2);
+
+        switch (whichVector)
+        {
+            case 0:
+                yVal = 0;
+                xVal = 5;
+                break;
+            case 1:
+                yVal = 5;
+                xVal = 0;
+                break;
+        }
+
+        transform.position = new Vector3(transform.position.x + isMinus * xVal * Time.deltaTime, transform.position.y + isMinus * yVal * Time.deltaTime, transform.position.z);
+
+        return transform.position;
     }
         
 }
