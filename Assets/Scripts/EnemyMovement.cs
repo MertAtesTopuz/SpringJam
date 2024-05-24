@@ -21,7 +21,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if(playerAwaerness.AwareOfPlayer == false)
         {
-            transform.position = Vector3.MoveTowards(this.transform.position, targetObj.position, 3 * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, targetObj.position, 3 * Time.deltaTime);
         }
         else if(playerAwaerness.AwareOfPlayer == true)
         {
