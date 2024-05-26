@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireArea : MonoBehaviour
+public class FireAreaScript : MonoBehaviour
 {
     public AttackMaker attackMaker;
     
