@@ -19,6 +19,8 @@ public class SceneController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        isEnd = FindAnyObjectByType<NextScene>().playerGrow;
+
         if(isEnd== true)
         {
             custscene.Play();

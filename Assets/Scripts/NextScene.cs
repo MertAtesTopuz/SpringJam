@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,8 @@ public class NextScene : MonoBehaviour
 {
 
     private bool canPress = false, itemsFull = false;
+
+    public bool playerGrow = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -38,7 +41,12 @@ public class NextScene : MonoBehaviour
 
         if(Input.GetKey(KeyCode.E) && canPress && itemsFull)
         {
-            SceneManager.LoadScene(3);
+            playerGrow = true;
+        }
+
+        if(!canPress)
+        {
+            playerGrow = false;
         }
     }
 }

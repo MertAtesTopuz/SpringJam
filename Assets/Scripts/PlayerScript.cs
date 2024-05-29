@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -99,5 +100,10 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("walkingReversed", Input.GetKey(KeyCode.S) && isCarrying == false);
         anim.SetBool("isCarry", isCarrying == true);
         anim.SetBool("isWalknCarry", (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)) && isCarrying == true);
+    }
+
+    public void LoadTownScene()
+    {
+        SceneManager.LoadScene(3);
     }
 }
