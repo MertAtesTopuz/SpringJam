@@ -12,6 +12,12 @@ public class EnemyHealth : MonoBehaviour
 
     public GameObject moloz;
 
+    private Animator anim;
+
+    private void Awake()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     void Start()
     {
@@ -36,7 +42,7 @@ public class EnemyHealth : MonoBehaviour
     {
         particle.Play();
 
-        InvokeRepeating("Shake", 0.1f, 0.5f);
+        anim.SetTrigger("IsDestroyed");
 
         yield return new WaitForSeconds(2);
 
@@ -47,31 +53,5 @@ public class EnemyHealth : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private Vector3 Shake()
-    {
-        
-        Debug.Log("Invoked.");
-
-        int isMinus, whichVector, xVal = 0, yVal = 0;
-
-        isMinus = Random.Range(0,2) == 0 ? -1 : 1;
-        whichVector = Random.Range(0, 2);
-
-        switch (whichVector)
-        {
-            case 0:
-                yVal = 0;
-                xVal = 5;
-                break;
-            case 1:
-                yVal = 5;
-                xVal = 0;
-                break;
-        }
-
-        transform.position = new Vector3(transform.position.x + isMinus * xVal * Time.deltaTime, transform.position.y + isMinus * yVal * Time.deltaTime, transform.position.z);
-
-        return transform.position;
-    }
         
 }
