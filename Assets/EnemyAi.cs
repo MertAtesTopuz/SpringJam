@@ -47,12 +47,12 @@ public class EnemyAi : MonoBehaviour
     private void AttackPlayer()
     {
         agent.SetDestination(transform.position);
-        //transform.LookAt(player);
+        transform.LookAt(player);
 
         if (!alreadyAttack)
         {
-            Rigidbody rb = Instantiate(projectile, projectileSpawn.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.right * 32f, ForceMode.Impulse);
+            Rigidbody rb = Instantiate(projectile, projectileSpawn.position, projectileSpawn.rotation).GetComponent<Rigidbody>();
+            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
             rb.AddForce(transform.up * 8f, ForceMode.Impulse);
             alreadyAttack = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
