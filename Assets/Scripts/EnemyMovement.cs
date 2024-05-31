@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public Transform targetObj;
-    public PlayerAwaerness playerAwaerness;
+    private Transform targetObj;
+    private PlayerAwaerness playerAwaerness;
     public GameObject pointer;
     public GameObject projectilePre;
     public float time;
     public float setTime;
+    public bool stun;
+    public float stunTime;
+    public float stunTimeSet;
 
     void Start()
     {
@@ -19,21 +22,35 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-        if(playerAwaerness.AwareOfPlayer == false)
+        if (!stun)
         {
-            transform.position = Vector3.MoveTowards(transform.position, targetObj.position, 3 * Time.deltaTime);
-        }
-        else if(playerAwaerness.AwareOfPlayer == true)
-        {
-            time -= Time.deltaTime;
-        }
+            if(playerAwaerness.AwareOfPlayer == false)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, targetObj.position, 3 * Time.deltaTime);
+            }
+            else if(playerAwaerness.AwareOfPlayer == true)
+            {
+                time -= Time.deltaTime;
+            }
 
-        if(time <= 0f)
-        {
-            time = setTime;
-            Invoke("Attack", 1f);
+            if(time <= 0f)
+            {
+                time = setTime;
+                Invoke("Attack", 1f);
+            }
+            transform.LookAt(targetObj);
         }
-        transform.LookAt(targetObj);
+        else
+        {
+            stunTime -= Time.deltaTime;
+
+            if (stunTime < 0)
+            {
+                stun = false;
+                time = setTime;
+                stunTime = stunTimeSet;
+            }
+        }
     }
 
     private void Attack()
