@@ -24,6 +24,7 @@ public class PartHolder : MonoBehaviour
     [Header("Heads")]
     public GameObject firePrefab;
     public GameObject acidPrefab;
+    public GameObject lionPrefab;
 
     [Header("Bodys")]
     public GameObject spikePrefab;
@@ -76,12 +77,21 @@ public class PartHolder : MonoBehaviour
                     print("Fire");
                     firePrefab.SetActive(true);
                     acidPrefab.SetActive(false);
+                    lionPrefab.SetActive(false);
                     break;
                 
                 case "AcidHead":
                     print("Acid");
                     acidPrefab.SetActive(true);
                     firePrefab.SetActive(false);
+                    lionPrefab.SetActive(false);
+                    break;
+
+                case "LionHead":
+                    print("Lion");
+                    acidPrefab.SetActive(false);
+                    firePrefab.SetActive(false);
+                    lionPrefab.SetActive(true);
                     break;
             }
         }
