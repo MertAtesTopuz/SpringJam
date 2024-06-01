@@ -56,7 +56,7 @@ public class Godzillah : MonoBehaviour
         //cam.transform.position = new Vector3(transform.position.x - mesafeX, cam.transform.position.y, cam.transform.position.y - mesafeY);
     }
 
-    private Vector2 MovePlayer()
+    public Vector2 MovePlayer()
     {
         Vector2 direction = moveAction.ReadValue<Vector2>();
 
