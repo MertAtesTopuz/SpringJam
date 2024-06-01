@@ -19,7 +19,10 @@ public class SceneController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isEnd = FindAnyObjectByType<NextScene>().playerGrow;
+        if (FindAnyObjectByType<NextScene>() != null)
+        {
+            isEnd = FindAnyObjectByType<NextScene>().playerGrow;
+        }
 
         if(isEnd== true)
         {
