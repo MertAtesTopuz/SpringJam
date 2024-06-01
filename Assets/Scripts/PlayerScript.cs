@@ -64,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
         Animation();
         //Debug.Log(dir.y);
 
-        cam.transform.position = new Vector3(transform.position.x - mesafeX, cam.transform.position.y ,cam.transform.position.y - mesafeY);
+        cam.transform.position = new Vector3(transform.position.x - mesafeX, cam.transform.position.y ,transform.position.z - mesafeY);
     }
 
     private Vector2 MovePlayer()
