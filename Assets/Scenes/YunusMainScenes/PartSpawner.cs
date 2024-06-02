@@ -10,8 +10,14 @@ public class PartSpawner : MonoBehaviour
     {
         for(int i = 0; i < itemsToSpawn.numberOfSpawn; i++)
         {
-            Instantiate(itemsToSpawn.itemToSpawn, transform.position, Quaternion.identity);
+            Invoke(nameof(PartSpawn), 0.1f);
         }
+        
+    }
+
+    public void PartSpawn()
+    {   
+        Instantiate(itemsToSpawn.itemToSpawn, transform.position, Quaternion.identity);
     }
 
 }

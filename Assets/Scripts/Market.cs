@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Market : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class Market : MonoBehaviour
     {
         if(canOpen && Input.GetKeyDown(KeyCode.E))
         {
+
             marketCanvas.SetActive(true);
             Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None;

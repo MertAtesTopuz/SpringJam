@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3accd1285f9a6e74d8b6aa17f1c982bb, type: 3}
   m_Name: Wing
   m_EditorClassIdentifier: 
-  numberOfSpawn: 0
-  itemToSpawn: {fileID: 1756460493303258624, guid: 390e8f077aaf4cd449dc0791ccb88ad0,
+  numberOfSpawn: 5
+  itemToSpawn: {fileID: 6413750229140899136, guid: 4daa04355d459d44ab23e584fea8a2f0,
     type: 3}
-  locationToSpawn: {fileID: 0}
