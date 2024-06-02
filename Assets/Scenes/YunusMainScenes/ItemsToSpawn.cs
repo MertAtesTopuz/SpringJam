@@ -6,7 +6,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ItemsToSpawn")]
 public class ItemsToSpawn : ScriptableObject
 {
-    public float numberOfSpawn = 0;
-
-    public GameObject itemToSpawn;
+    public bool isBought = false;
+    
 }

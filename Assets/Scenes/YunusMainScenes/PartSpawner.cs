@@ -6,18 +6,12 @@ public class PartSpawner : MonoBehaviour
 {
 
     public ItemsToSpawn itemsToSpawn;
+    public GameObject itemHolder;
     void Start()
     {
-        for(int i = 0; i < itemsToSpawn.numberOfSpawn; i++)
+        if(itemsToSpawn.isBought == true)
         {
-            Invoke(nameof(PartSpawn), 0.1f);
-        }
-        
+            itemHolder.SetActive(true);
+        } 
     }
-
-    public void PartSpawn()
-    {   
-        Instantiate(itemsToSpawn.itemToSpawn, transform.position, Quaternion.identity);
-    }
-
 }

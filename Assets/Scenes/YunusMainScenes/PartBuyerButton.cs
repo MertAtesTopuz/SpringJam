@@ -7,16 +7,19 @@ using UnityEngine.UI;
 public class PartBuyerButton : MonoBehaviour
 {
     public ItemsToSpawn itemsToSpawn;
-    public Text wingText;
+    public GameObject text;
 
     void Start()
     {
-        itemsToSpawn.numberOfSpawn = 0;
+        if(itemsToSpawn.isBought == true)
+        {
+            text.SetActive(true);
+        }
     }
 
     public void WingBuy()
     {
-        itemsToSpawn.numberOfSpawn++;
-        wingText.text = "" + Mathf.Round(itemsToSpawn.numberOfSpawn);
+        itemsToSpawn.isBought = true;
+        text.SetActive(true);
     }
 }
