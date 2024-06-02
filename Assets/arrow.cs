@@ -12,5 +12,10 @@ public class arrow : MonoBehaviour
 
             Destroy(gameObject);
         }
+
+        if(other.gameObject.CompareTag("Ground"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
