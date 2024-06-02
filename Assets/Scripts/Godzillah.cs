@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Godzillah : MonoBehaviour
 {
@@ -20,10 +21,15 @@ public class Godzillah : MonoBehaviour
     #endregion#
 
 
-    #region Rotation#
+    #region Health#
 
+    [SerializeField] public int health;
+
+    public int saveHealth;
 
     #endregion#
+
+
 
 
     private Animator anim;
@@ -41,6 +47,8 @@ public class Godzillah : MonoBehaviour
 
     void Start()
     {
+        saveHealth = health;
+
         Cursor.lockState = CursorLockMode.Locked;
         playerInput = GetComponent<PlayerInput>();
         moveAction = playerInput.actions.FindAction("Move");
@@ -53,6 +61,9 @@ public class Godzillah : MonoBehaviour
 
         Animation();
 
+        Debug.Log("Can: " + health);
+
+        Status();
         //cam.transform.position = new Vector3(transform.position.x - mesafeX, cam.transform.position.y, cam.transform.position.y - mesafeY);
     }
 
@@ -75,5 +86,13 @@ public class Godzillah : MonoBehaviour
     public void Animation()
     {
         //Empty
+    }
+
+    private void Status()
+    {
+        if(health <= 0)
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 }
