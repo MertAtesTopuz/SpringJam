@@ -12,14 +12,32 @@ public class AttackMaker : MonoBehaviour
     public bool tentacleRange;
     public bool clawDamage;
     public  int attackPower = 2;
+    private PartHolder parts;
 
     public ParticleSystem fireParticle;
     public GameObject fireArea;
     private Animator anim;
+    public Animator clawAnim;
+    public Animator octopusAnim;
 
     void Start()
     {
-        anim = GetComponent<Animator>();
+        parts = GetComponent<PartHolder>();
+        
+        if(parts.hand != null)
+        {
+
+            switch (parts.hand.GetType().ToString())
+            {
+                case "Claw":
+                    anim = clawAnim;
+                    break;
+
+                case "Tentacle":
+                    anim = octopusAnim;
+                    break;
+            }
+        }
 
         if(clawDamage == true)
         {
@@ -48,9 +66,9 @@ public class AttackMaker : MonoBehaviour
         {
             anim.SetTrigger("isAttack");
             canAttack = false;
-            attackArea.SetActive(true);
+           // attackArea.SetActive(true);
             yield return new WaitForSeconds(attackCooldown); 
-            attackArea.SetActive(false);
+           // attackArea.SetActive(false);
             canAttack = true;
         } 
     }

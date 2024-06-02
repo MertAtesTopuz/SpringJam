@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class FireAreaScript : MonoBehaviour
 {
-    public AttackMaker attackMaker;
+    public int damage;
     
     void OnTriggerEnter(Collider other)
     {
         if(other.tag  == "Enemy")
         {
-            other.GetComponent<EnemyHealth>().EnemyTakeDamage(attackMaker.attackPower);
+            other.GetComponent<EnemyHealth>().EnemyTakeDamage(damage);
         }
     }
 }
