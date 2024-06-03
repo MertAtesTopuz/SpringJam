@@ -60,9 +60,13 @@ public class KatapultAi : MonoBehaviour
             }
         }
 
-        transform.LookAt(player);
-        transform.rotation = Quaternion.Euler(0, -90 ,0);
-        transform.position = new Vector3(transform.position.x, transform.position.y + 2f, transform.position.z);
+        Vector2 vector2= transform.position;
+        Vector2 targetPos = player.position;
+        Vector2 lookDir = targetPos - vector2;
+        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg-90f;
+        //transform.rotation = Quaternion.Euler(transform.rotation.x,transform.rotation.y,angle); 
+        transform.rotation = Quaternion.Euler(0,angle ,0);
+        //transform.position = new Vector3(transform.position.x, transform.position.y + 2f, transform.position.z);
     }
 
     private void ChasePlayer()
