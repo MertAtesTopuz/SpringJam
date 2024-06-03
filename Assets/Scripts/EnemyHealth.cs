@@ -64,7 +64,7 @@ public class EnemyHealth : MonoBehaviour
     {
         particle.Play();
 
-        anim.SetTrigger("IsDestroyed");
+        //anim.SetTrigger("IsDestroyed");
 
         yield return new WaitForSeconds(2);
 

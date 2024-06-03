@@ -12016,18 +12016,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970667261}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &972609860 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3972741594041454517, guid: 39bb6ede85fbe8945acdc4a16efde090,
-    type: 3}
-  m_PrefabInstance: {fileID: 6602932035248826381}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb1439ea99a5fbe4f89a6b184f516908, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &973513296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16239,7 +16227,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 972609860}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Market, Assembly-CSharp
         m_MethodName: CloseMarketButton
         m_Mode: 1
@@ -25983,79 +25971,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cef2b08d336632c4eb4d8c3b34956054, type: 3}
---- !u!1001 &6602932035248826381
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2695342688592617092, guid: 39bb6ede85fbe8945acdc4a16efde090,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 30.323
-      objectReference: {fileID: 0}
-    - target: {fileID: 2695342688592617092, guid: 39bb6ede85fbe8945acdc4a16efde090,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.775
-      objectReference: {fileID: 0}
-    - target: {fileID: 2695342688592617092, guid: 39bb6ede85fbe8945acdc4a16efde090,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -12.103
-      objectReference: {fileID: 0}
-    - target: {fileID: 2695342688592617092, guid: 39bb6ede85fbe8945acdc4a16efde090,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2695342688592617092, guid: 39bb6ede85fbe8945acdc4a16efde090,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2695342688592617092, guid: 39bb6ede85fbe8945acdc4a16efde090,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2695342688592617092, guid: 39bb6ede85fbe8945acdc4a16efde090,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2695342688592617092, guid: 39bb6ede85fbe8945acdc4a16efde090,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2695342688592617092, guid: 39bb6ede85fbe8945acdc4a16efde090,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2695342688592617092, guid: 39bb6ede85fbe8945acdc4a16efde090,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3972741594041454517, guid: 39bb6ede85fbe8945acdc4a16efde090,
-        type: 3}
-      propertyPath: marketCanvas
-      value: 
-      objectReference: {fileID: 271422251}
-    - target: {fileID: 4034887687810924047, guid: 39bb6ede85fbe8945acdc4a16efde090,
-        type: 3}
-      propertyPath: m_Name
-      value: NPC
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 39bb6ede85fbe8945acdc4a16efde090, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -26071,7 +25986,6 @@ SceneRoots:
   - {fileID: 1816859478}
   - {fileID: 1721910429}
   - {fileID: 2081312079}
-  - {fileID: 6602932035248826381}
   - {fileID: 1231623855}
   - {fileID: 2081229100}
   - {fileID: 1317764169}
