@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809944525184424993}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.0752516, y: 0, z: 1.0184885}
   m_LocalScale: {x: 0.03243594, y: 0.03243594, z: 0.03243594}
   m_ConstrainProportionsScale: 0
@@ -139,6 +139,8 @@ MonoBehaviour:
   enemyMaxHealth: 10
   particle: {fileID: 1434324522423336447}
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
+  koyun: {fileID: 3242124275868833449, guid: 09ceb49968c38f94ea3a62f181c28b39, type: 3}
+  at: {fileID: 1740496493509772090, guid: c8616a2e4b640c348a4493a8a888f820, type: 3}
 --- !u!65 &8965161574494308313
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -5,12 +5,17 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    private int whichMob;
 
     public int enemyHealth;
     public int enemyMaxHealth = 10;
     public ParticleSystem particle;
 
     public GameObject moloz;
+
+    //Building Spawn
+    public GameObject koyun, at;
+    private GameObject willSpawn;
 
     private Animator anim;
 
@@ -21,7 +26,24 @@ public class EnemyHealth : MonoBehaviour
 
     void Start()
     {
+        Random.InitState(System.DateTime.Now.Millisecond);
+
         enemyHealth = enemyMaxHealth;
+
+        whichMob = Random.Range(0, 3);
+
+        switch (whichMob)
+        {
+            case 0:
+                willSpawn = null;
+                break;
+            case 1:
+                willSpawn = koyun;
+                break;
+            case 2:
+                willSpawn = at;
+                break;
+        }
     }
 
     public void EnemyTakeDamage(int enemyDamageTaken)
@@ -49,6 +71,15 @@ public class EnemyHealth : MonoBehaviour
         Vector3 spawnPosition = new Vector3(transform.position.x, 3f, transform.position.z);
 
         Instantiate(moloz, spawnPosition, Quaternion.identity);
+
+        spawnPosition.y += spawnPosition.y + 3;
+        
+        //Mob Spawn
+        if(willSpawn != null)
+        {
+            Instantiate(willSpawn, spawnPosition, Quaternion.identity);
+        }
+
         particle.Stop();
         Destroy(gameObject);
     }
