@@ -66,9 +66,9 @@ public class AttackMaker : MonoBehaviour
         {
             anim.SetTrigger("isAttack");
             canAttack = false;
-            attackArea.SetActive(true);
+            //attackArea.SetActive(true);
             yield return new WaitForSeconds(attackCooldown); 
-            attackArea.SetActive(false);
+            //attackArea.SetActive(false);
             canAttack = true;
         } 
     }
