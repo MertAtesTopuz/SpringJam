@@ -71,6 +71,15 @@ public class Godzillah : MonoBehaviour
     {
         Vector2 direction = moveAction.ReadValue<Vector2>();
 
+        if(direction != Vector2.zero)
+        {
+            anim.SetBool("isRunning", true);
+        }
+        else
+        {
+            anim.SetBool("isRunning", false);
+        }
+
         transform.Translate(0, 0, direction.y * Time.deltaTime * movementSpeed);
 
         return direction;
