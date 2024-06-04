@@ -12,12 +12,12 @@ public class Godzillah : MonoBehaviour
     private PlayerInput playerInput;
     private InputAction moveAction;
 
-    [SerializeField] float movementSpeed;
-    [SerializeField] float rotationSpeed;
-    [SerializeField] float mesafeX;
-    [SerializeField] float mesafeY;
+    //[SerializeField] float movementSpeed;
+    //[SerializeField] float rotationSpeed;
+    //[SerializeField] float mesafeX;
+    //[SerializeField] float mesafeY;
 
-    private bool isCarrying;
+    //private bool isCarrying;
     #endregion#
 
 
@@ -56,10 +56,10 @@ public class Godzillah : MonoBehaviour
 
     void Update()
     {
-        dir = MovePlayer();
-        RotatePlayer();
+       // dir = MovePlayer();
+       // RotatePlayer();
 
-        Animation();
+        //Animation();
 
         Debug.Log("Can: " + health);
 
@@ -67,6 +67,7 @@ public class Godzillah : MonoBehaviour
         //cam.transform.position = new Vector3(transform.position.x - mesafeX, cam.transform.position.y, cam.transform.position.y - mesafeY);
     }
 
+    /*
     public Vector2 MovePlayer()
     {
         Vector2 direction = moveAction.ReadValue<Vector2>();
@@ -91,6 +92,7 @@ public class Godzillah : MonoBehaviour
         float rotationAmount = rotationInput.x * rotationSpeed * Time.deltaTime;
         transform.Rotate(0f, rotationAmount, 0f);
     }
+    */
 
     public void Animation()
     {

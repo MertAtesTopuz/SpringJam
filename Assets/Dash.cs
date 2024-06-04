@@ -25,10 +25,10 @@ public class Dash : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.G))
         {
-            Dashing();
+            //Dashing();
         }
 
-        DashForce();
+       // DashForce();
     }
     public void Dashing()
     {
@@ -48,7 +48,7 @@ public class Dash : MonoBehaviour
     {
         if (isDashing == true)
         {
-            transform.Translate(0, 0, movement.MovePlayer().y * dashingPower);
+            //transform.Translate(0, 0, movement.MovePlayer().y * dashingPower);
         }
     }
 

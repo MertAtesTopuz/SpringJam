@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Currency
   m_EditorClassIdentifier: 
   currencyName: DNA
-  currencyAmount: 100
+  currencyAmount: 139
