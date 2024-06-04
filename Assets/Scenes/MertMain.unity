@@ -1872,7 +1872,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109697812}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13765411, y: -0.000000021158126, z: 0.0000000029404956, w: 0.99048036}
+  m_LocalRotation: {x: 0.13765413, y: 0.000000015160124, z: -0.0000000021069106, w: 0.99048036}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3584,7 +3584,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064787945}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.119615, y: -0.000000017082845, z: 0.0000000020581412, w: 0.9928204}
+  m_LocalRotation: {x: 0.119615, y: 0.000000017082849, z: -0.0000000020581417, w: 0.9928204}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4189,7 +4189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341506239538374609}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.119615026, y: -0.000000018615602, z: 0.0000000022428084,
+  m_LocalRotation: {x: 0.119615026, y: 0.000000018615603, z: -0.0000000022428084,
     w: 0.9928204}
   m_LocalPosition: {x: 15.9, y: 23.02, z: -49.267326}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -5352,7 +5352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   partDebugger: {fileID: 11400000, guid: c96adf8c9f73943b5b3ee78298e59ae4, type: 2}
-  hand: {fileID: 11400000, guid: 8acdc5660c4864eb78a0c8a4199cafb2, type: 2}
+  hand: {fileID: 0}
   head: {fileID: 0}
   body: {fileID: 0}
   clawPrefab: {fileID: 5340883338921118083}
@@ -7152,8 +7152,10 @@ MonoBehaviour:
   tentacleRange: 0
   clawDamage: 0
   attackPower: 2
+  parts: {fileID: 11400000, guid: c96adf8c9f73943b5b3ee78298e59ae4, type: 2}
   fireParticle: {fileID: 789165573}
   fireArea: {fileID: 658197277979966612}
+  anim: {fileID: 0}
   clawAnim: {fileID: 5816911338582068787}
   octopusAnim: {fileID: 8507190881779981212}
 --- !u!1 &5709445590484010631
@@ -8418,8 +8420,10 @@ MonoBehaviour:
   tentacleRange: 0
   clawDamage: 0
   attackPower: 2
+  parts: {fileID: 0}
   fireParticle: {fileID: 1957608595}
   fireArea: {fileID: 3383086950799281924}
+  anim: {fileID: 0}
   clawAnim: {fileID: 0}
   octopusAnim: {fileID: 0}
 --- !u!4 &7629493621200641710

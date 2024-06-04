@@ -12,22 +12,21 @@ public class AttackMaker : MonoBehaviour
     public bool tentacleRange;
     public bool clawDamage;
     public  int attackPower = 2;
-    private PartHolder parts;
+    public PartDebugger parts;
 
     public ParticleSystem fireParticle;
     public GameObject fireArea;
-    private Animator anim;
+    public Animator anim;
     public Animator clawAnim;
     public Animator octopusAnim;
 
     void Start()
     {
-        parts = GetComponent<PartHolder>();
         
-        if(parts.hand != null)
+        if(parts.mainHand != null)
         {
 
-            switch (parts.hand.GetType().ToString())
+            switch (parts.mainHand.GetType().ToString())
             {
                 case "Claw":
                     anim = clawAnim;
