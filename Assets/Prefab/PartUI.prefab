@@ -609,3 +609,5 @@ MonoBehaviour:
   headImg: {fileID: 3187342393516757242}
   handImg: {fileID: 1422521527412123299}
   debugger: {fileID: 11400000, guid: c96adf8c9f73943b5b3ee78298e59ae4, type: 2}
+  transparant: {r: 1, g: 1, b: 1, a: 0}
+  normal: {r: 1, g: 1, b: 1, a: 1}

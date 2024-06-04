@@ -7,6 +7,8 @@ public class PartUIUpdater : MonoBehaviour
 {
     public Image bodyImg, headImg, handImg;
     public PartDebugger debugger;
+    public Color transparant;
+    public Color normal;
 
     void Start()
     {
@@ -16,8 +18,34 @@ public class PartUIUpdater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bodyImg.sprite = debugger.mainBody.partSprite;
-        handImg.sprite = debugger.mainHand.partSprite;
-        headImg.sprite = debugger.mainHead.partSprite;
+        if(debugger.mainBody != null)
+        {
+            bodyImg.color = normal;
+            bodyImg.sprite = debugger.mainBody.partSprite;
+        }
+        else
+        {
+            bodyImg.color = transparant;
+        }
+
+        if(debugger.mainHand != null)
+        {
+            handImg.color = normal;
+            handImg.sprite = debugger.mainHand.partSprite;
+        }
+        else
+        {
+            handImg.color = transparant;
+        }
+
+        if(debugger.mainHead != null)
+        {
+            headImg.color = normal;
+            headImg.sprite = debugger.mainHead.partSprite;
+        }
+        else
+        {
+            headImg.color = transparant;
+        }
     }
 }

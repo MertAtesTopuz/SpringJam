@@ -7,19 +7,25 @@ using UnityEngine.UI;
 public class PartBuyerButton : MonoBehaviour
 {
     public ItemsToSpawn itemsToSpawn;
-    public GameObject text;
+    public TextMeshProUGUI text;
+    public DNACurrency currency;
+    public int cost;
 
     void Start()
     {
         if(itemsToSpawn.isBought == true)
         {
-            text.SetActive(true);
+            text.text = "Bought";
         }
     }
 
     public void WingBuy()
     {
-        itemsToSpawn.isBought = true;
-        text.SetActive(true);
+        if (currency.currencyAmount >= cost)
+        {
+            currency.currencyAmount -= cost;
+            itemsToSpawn.isBought = true;
+            text.text = "Bought";
+        }
     }
 }
