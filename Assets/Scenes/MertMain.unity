@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1872,7 +1872,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109697812}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13765413, y: 0.000000015160124, z: -0.0000000021069106, w: 0.99048036}
+  m_LocalRotation: {x: 0.13765411, y: -0.000000021158126, z: 0.0000000029404956, w: 0.99048036}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2514,7 +2514,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393073725}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.101584114, y: -0.00000001764418, z: 0.0000000018016884, w: 0.994827}
+  m_LocalRotation: {x: 0.101584114, y: 0.00000001764419, z: -0.0000000018016895, w: 0.994827}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3584,7 +3584,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064787945}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.119615, y: 0.000000017082849, z: -0.0000000020581417, w: 0.9928204}
+  m_LocalRotation: {x: 0.119615, y: -0.000000017082845, z: 0.0000000020581412, w: 0.9928204}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4143,12 +4143,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341506239538374609}
   m_Enabled: 1
---- !u!1 &579893533313861727 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5040473643134538431, guid: c1c36e7648cbe454490a27f240e3b6a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 3126246719053715678}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &588668398457400636
 GameObject:
   m_ObjectHideFlags: 0
@@ -4189,7 +4183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341506239538374609}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.119615026, y: 0.000000018615603, z: -0.0000000022428084,
+  m_LocalRotation: {x: 0.119615026, y: -0.000000018615602, z: 0.0000000022428084,
     w: 0.9928204}
   m_LocalPosition: {x: 15.9, y: 23.02, z: -49.267326}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -7146,7 +7140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b9bffa3c20514d45a26a17018fc37cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackArea: {fileID: 0}
   attackCooldown: 2
   canAttack: 1
   tentacleRange: 0
@@ -8414,7 +8407,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b9bffa3c20514d45a26a17018fc37cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackArea: {fileID: 579893533313861727}
   attackCooldown: 2
   canAttack: 1
   tentacleRange: 0

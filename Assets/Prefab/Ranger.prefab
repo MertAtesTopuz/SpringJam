@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6730119077515687688}
   m_Layer: 0
   m_Name: Ranger
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,8 +111,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.32533053, y: 0.33132485, z: 0.101905316}
-  m_Center: {x: 0.0028899666, y: 0.0041183443, z: -0.0036740147}
+  m_Size: {x: 0.32533053, y: 0.33132485, z: 0.14419568}
+  m_Center: {x: 0.0028899666, y: 0.0041183443, z: 0.017471157}
 --- !u!114 &8460412082226785858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2795efdc76f6417aa7cfe38b796355a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 0
+  enemyHealth: 4
   enemyMaxHealth: 10
 --- !u!195 &334599399474674097
 NavMeshAgent:

@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class AttackMaker : MonoBehaviour
 {
 
-    public GameObject attackArea;
+    //public GameObject attackArea;
     public float attackCooldown = 2;
     public bool canAttack = true;
     public bool tentacleRange;

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65302d51eb10f44578d5ed353681d168, type: 3}
   m_Name: PartDebugger
   m_EditorClassIdentifier: 
-  mainHand: {fileID: 11400000, guid: 3d3c0642938814c25a7e22d1c585da97, type: 2}
-  mainHead: {fileID: 11400000, guid: 0908b0a1f0aea45e2bfe7e94f477601c, type: 2}
-  mainBody: {fileID: 11400000, guid: 2026f6304fbfa49f9a1c6acadb237b77, type: 2}
+  mainHand: {fileID: 0}
+  mainHead: {fileID: 0}
+  mainBody: {fileID: 0}

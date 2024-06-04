@@ -10,6 +10,8 @@ public class HandAttack : MonoBehaviour
         if(other.tag  == "Enemy" || other.tag == "Building")
         {
             other.GetComponent<EnemyHealth>().EnemyTakeDamage(damage);
+            other.GetComponent<EnemyHealthMain>().EnemyTakeDamage(damage);
+            other.GetComponent<MainEnemyHealth>().EnemyTakeDamage(damage);
         }
     }
 }
