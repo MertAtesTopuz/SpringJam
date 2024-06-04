@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5163498980477811615}
   m_Layer: 0
-  m_Name: springjam_building1
+  m_Name: HouseBig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.0752516, y: 0, z: 1.0184885}
   m_LocalScale: {x: 0.03243594, y: 0.03243594, z: 0.03243594}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4861732132373444654}
   m_Father: {fileID: 0}

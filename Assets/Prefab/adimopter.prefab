@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7204917456151036450}
   - component: {fileID: 7983194868792749820}
   - component: {fileID: 4357256132203525410}
+  - component: {fileID: 5722613254857200718}
   m_Layer: 0
   m_Name: adimopter
   m_TagString: Untagged
@@ -28,9 +29,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4007049166978786045}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 23.837234, y: 14.65, z: 2.7042563}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4686231863163953451}
@@ -100,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dfdfec2122973743a1ce6aed03fcbf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerAwarenessDistance: 15
+  playerAwarenessDistance: 20
 --- !u!114 &4357256132203525410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,6 +122,20 @@ MonoBehaviour:
   stun: 0
   stunTime: 0
   stunTimeSet: 0
+--- !u!114 &5722613254857200718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4007049166978786045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5757351741bb64a55b0f3ee936417943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 0
+  enemyMaxHealth: 20
 --- !u!1 &4167970085227750249
 GameObject:
   m_ObjectHideFlags: 0
