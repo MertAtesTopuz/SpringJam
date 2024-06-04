@@ -101,7 +101,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4a6b04978c2c05a4f8798b216b571e1f,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.2435944
+      value: 3.243594
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4a6b04978c2c05a4f8798b216b571e1f,
         type: 3}
@@ -111,7 +111,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4a6b04978c2c05a4f8798b216b571e1f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.166396
+      value: 2.6396368
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4a6b04978c2c05a4f8798b216b571e1f,
         type: 3}
@@ -121,27 +121,27 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4a6b04978c2c05a4f8798b216b571e1f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.4975673
+      value: 0.58060336
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4a6b04978c2c05a4f8798b216b571e1f,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.4344902
+      value: -0.5574903
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4a6b04978c2c05a4f8798b216b571e1f,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.4344902
+      value: 0.5574903
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4a6b04978c2c05a4f8798b216b571e1f,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.55786943
+      value: 0.43497652
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4a6b04978c2c05a4f8798b216b571e1f,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.55786943
+      value: 0.43497652
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4a6b04978c2c05a4f8798b216b571e1f,
         type: 3}
@@ -156,7 +156,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4a6b04978c2c05a4f8798b216b571e1f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 255.82599
+      value: 284.074
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4a6b04978c2c05a4f8798b216b571e1f,
         type: 3}
@@ -240,9 +240,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 6
-  enemyMaxHealth: 10
   particle: {fileID: 5382670695192755396}
+  reward: 250
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
+  dna: {fileID: 11400000, guid: 85b3510eff0875a428d2ce7a17e2f7ca, type: 2}
   koyun: {fileID: 3242124275868833449, guid: 09ceb49968c38f94ea3a62f181c28b39, type: 3}
   at: {fileID: 1740496493509772090, guid: c8616a2e4b640c348a4493a8a888f820, type: 3}
 --- !u!95 &5023829978788823165

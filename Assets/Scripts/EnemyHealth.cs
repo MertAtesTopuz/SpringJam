@@ -7,11 +7,13 @@ public class EnemyHealth : MonoBehaviour
 {
     private int whichMob;
 
-    public int enemyHealth;
-    public int enemyMaxHealth = 10;
+    [SerializeField] public int enemyHealth;
+    //public int enemyMaxHealth = 10;
     public ParticleSystem particle;
+    [SerializeField] private int reward = 100;
 
     public GameObject moloz;
+    public DNACurrency dna;
 
     //Building Spawn
     public GameObject koyun, at;
@@ -28,7 +30,7 @@ public class EnemyHealth : MonoBehaviour
     {
         Random.InitState(System.DateTime.Now.Millisecond);
 
-        enemyHealth = enemyMaxHealth;
+        //enemyHealth = enemyMaxHealth;
 
         whichMob = Random.Range(0, 3);
 
@@ -63,6 +65,8 @@ public class EnemyHealth : MonoBehaviour
     IEnumerator Bekle()
     {
         particle.Play();
+
+        dna.currencyAmount += reward;
 
         anim.SetTrigger("IsDestroyed");
 

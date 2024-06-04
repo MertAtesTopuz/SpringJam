@@ -5013,10 +5013,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42d744b609b9e714694a138d2a05e1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 12
-  enemyMaxHealth: 12
+  enemyHealth: 8
   particle: {fileID: 1158788961195054058}
+  reward: 400
   moloz: {fileID: 919132149155446097, guid: cf67b45cc57d85d4da01fccc258f35aa, type: 3}
+  dna: {fileID: 11400000, guid: 85b3510eff0875a428d2ce7a17e2f7ca, type: 2}
   koyun: {fileID: 3242124275868833449, guid: 09ceb49968c38f94ea3a62f181c28b39, type: 3}
   at: {fileID: 1740496493509772090, guid: c8616a2e4b640c348a4493a8a888f820, type: 3}
 --- !u!95 &7095697039690040489
