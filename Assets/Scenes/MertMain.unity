@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4018,7 +4018,7 @@ PrefabInstance:
     - target: {fileID: 385490769552916020, guid: 637e64fb55eac4ba2b80cb11cd1011bc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: 0.24
       objectReference: {fileID: 0}
     - target: {fileID: 385490769552916020, guid: 637e64fb55eac4ba2b80cb11cd1011bc,
         type: 3}
@@ -4936,30 +4936,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 444208004958175656, guid: afa16368e20bb47f39b24ea11cd167cf,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -53.706734
-      objectReference: {fileID: 0}
-    - target: {fileID: 444208004958175656, guid: afa16368e20bb47f39b24ea11cd167cf,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 179.99998
-      objectReference: {fileID: 0}
-    - target: {fileID: 444208004958175656, guid: afa16368e20bb47f39b24ea11cd167cf,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 179.99998
-      objectReference: {fileID: 0}
     - target: {fileID: 4007049166978786045, guid: afa16368e20bb47f39b24ea11cd167cf,
         type: 3}
       propertyPath: m_Name
       value: adimopter
-      objectReference: {fileID: 0}
-    - target: {fileID: 4686231863163953451, guid: afa16368e20bb47f39b24ea11cd167cf,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -47.986668
       objectReference: {fileID: 0}
     - target: {fileID: 8592706593584869218, guid: afa16368e20bb47f39b24ea11cd167cf,
         type: 3}
@@ -5014,39 +4994,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4007049166978786045, guid: afa16368e20bb47f39b24ea11cd167cf,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1998456267353523568}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afa16368e20bb47f39b24ea11cd167cf, type: 3}
---- !u!1 &1998456267353523567 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4007049166978786045, guid: afa16368e20bb47f39b24ea11cd167cf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1998456267353523566}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1998456267353523568
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1998456267353523567}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 29db2cb16804a89469994cf48cf28483, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2051365033673354270
 GameObject:
   m_ObjectHideFlags: 0
@@ -6399,10 +6348,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47f8ad19736ab4bc89f980c5959a21fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 12
-  rotationSpeed: 300
-  mesafeX: 0
-  mesafeY: 39
   health: 30
   saveHealth: 0
 --- !u!137 &4187721141830936486

@@ -46,9 +46,10 @@ GameObject:
   - component: {fileID: 120091320717019620}
   - component: {fileID: 887112553413287413}
   - component: {fileID: 1872206862840993796}
+  - component: {fileID: 8791285427398875275}
   m_Layer: 0
   m_Name: katapult
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -207,6 +208,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   enemyMaxHealth: 20
+--- !u!65 &8791285427398875275
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254921526900912381}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9999999, y: 3.436708, z: 2}
+  m_Center: {x: 0, y: 0.37101594, z: 0}
 --- !u!1 &1851089260420199460
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,9 +9,20 @@ public class HandAttack : MonoBehaviour
     {
         if(other.tag  == "Enemy" || other.tag == "Building")
         {
-            other.GetComponent<EnemyHealth>().EnemyTakeDamage(damage);
-            other.GetComponent<EnemyHealthMain>().EnemyTakeDamage(damage);
-            other.GetComponent<MainEnemyHealth>().EnemyTakeDamage(damage);
+            if(other.GetComponent<EnemyHealth>() != null)
+            {
+                other.GetComponent<EnemyHealth>().EnemyTakeDamage(damage);
+            }
+
+            if(other.GetComponent<EnemyHealthMain>() != null)
+            {
+                other.GetComponent<EnemyHealthMain>().EnemyTakeDamage(damage);
+            }
+
+            if(other.GetComponent<MainEnemyHealth>() != null)
+            {
+                other.GetComponent<MainEnemyHealth>().EnemyTakeDamage(damage);
+            }
         }
     }
 }

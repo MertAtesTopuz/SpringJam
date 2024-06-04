@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4357256132203525410}
   - component: {fileID: 5722613254857200718}
   - component: {fileID: 1276266254914364856}
+  - component: {fileID: 2102115527294376489}
   m_Layer: 0
   m_Name: adimopter
   m_TagString: Enemy
@@ -158,6 +159,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.7742312, y: 3.5292716, z: 5.2563305}
   m_Center: {x: 0.01607287, y: -0.6370709, z: -1.3226016}
+--- !u!95 &2102115527294376489
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4007049166978786045}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 29db2cb16804a89469994cf48cf28483, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4167970085227750249
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,7 +212,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8592706593584869218}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -53.706734, y: 179.99998, z: 179.99998}
 --- !u!33 &3525728700765943245
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -304,7 +326,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8592706593584869218}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -47.986668, z: 0}
 --- !u!33 &155322804453222590
 MeshFilter:
   m_ObjectHideFlags: 0
