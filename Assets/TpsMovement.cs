@@ -37,6 +37,10 @@ public class TpsMovement : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             rb.velocity = moveDir.normalized * speed * Time.deltaTime;
         }
+        else
+        {
+            rb.velocity = Vector3.zero;
+        }
     }
 
     public Vector3 MovePlayer()
