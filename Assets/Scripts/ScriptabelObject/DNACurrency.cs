@@ -5,6 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Currency", menuName = "Currency/DNA")]
 public class DNACurrency : ScriptableObject
 {
-    [SerializeField] public string currencyName;
-    [SerializeField] public int currencyAmount;
+    public string currencyName;
+    public int currencyAmount;
 }
